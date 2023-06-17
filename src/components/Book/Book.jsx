@@ -25,22 +25,23 @@ export const Book = ({ book, category }) => {
   };
 
   return (
-    <div className="book-container">
+    <div className={`book-container ${category}`}>
       <div className="book-card">
         <img src={book?.image} alt={book?.name} />
         <p>{book?.name}</p>
       </div>
 
-      <div className="menu-btn">
+      <div>
         {!isMenuOpen && (
           <AiFillCaretDown
+            className="menu-btn"
             onClick={() => {
               setIsMenuOpen(true);
             }}
           />
         )}
         {isMenuOpen && (
-          <div>
+          <div className="menu-cont">
             {categories?.map((cat) => (
               <div key={cat} className="category-container">
                 {book.status === cat && (
@@ -48,7 +49,12 @@ export const Book = ({ book, category }) => {
                     <TiTick />
                   </div>
                 )}
-                <p onClick={() => changeCategoryHandler(book, cat)}>{cat}</p>
+                <p
+                  className="category"
+                  onClick={() => changeCategoryHandler(book, cat)}
+                >
+                  {cat}
+                </p>
               </div>
             ))}
           </div>

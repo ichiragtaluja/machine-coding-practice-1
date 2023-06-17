@@ -1,1 +1,11 @@
+.search-nav {
+  display: flex;
+ 
+}
 
+.search-input {
+  border: 1px solid blue;
+  width: 90vw;
+  padding: 10px;
+  border-radius: 10px;
+}

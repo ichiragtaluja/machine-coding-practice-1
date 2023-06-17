@@ -4,18 +4,50 @@
 
 .book-card img {
   width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
 }
 
-.book-card {
-  width: 100px;
+.book-card p {
+  color: grey;
+  padding: 5px;
 }
 
 .book-container {
   position: relative;
+  margin: 10px;
+
+  border-radius: 10px;
+  width: 160px;
+  height: 350px;
+  box-shadow: -2px -1px 26px 0px rgba(199, 199, 199, 1);
 }
 
 .menu-btn {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.menu-cont {
+  width: 200px;
+  position: absolute;
+  background-color: rgb(59, 59, 59);
+  border: 1px solid black;
+  color: white;
+  right: -150px;
+  bottom: -5px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.category:hover {
+  background-color: rgb(91, 91, 91);
+  width: 100%;
+}
+
+.None {
+  display: none;
 }

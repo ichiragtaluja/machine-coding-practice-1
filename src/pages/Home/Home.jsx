@@ -10,13 +10,13 @@ export const Home = () => {
 
   return (
     <div>
-      <Link to="/search">Search</Link>
-      <h1>Home</h1>
+      <Link className="search" to="/search">Search</Link>
+      <h1 className="nav">Home</h1>
 
       <div className="shelves-container">
         {categories?.map((category) => (
           <div className="shelf" key={category}>
-            <h2>{category}</h2>
+            <h2>{category !== "None" ? category : ""}</h2>
             <Books category={category} />
           </div>
         ))}

@@ -1,7 +1,7 @@
 .book-card {
   display: flex;
   flex-flow: column nowrap;
-  border: 1px solid black;
+  
 }
 
 .books-container {
