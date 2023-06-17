@@ -1,0 +1,11 @@
+.shelves-container {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+}
+
+.shelf {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(207, 110, 110);
+}

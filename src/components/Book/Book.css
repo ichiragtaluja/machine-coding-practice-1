@@ -1,0 +1,21 @@
+.category-container {
+  display: flex;
+}
+
+.book-card img {
+  width: 100%;
+}
+
+.book-card {
+  width: 100px;
+}
+
+.book-container {
+  position: relative;
+}
+
+.menu-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
