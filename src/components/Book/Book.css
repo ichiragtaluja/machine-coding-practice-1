@@ -17,11 +17,11 @@
 .book-container {
   position: relative;
   margin: 10px;
-
   border-radius: 10px;
   width: 160px;
   height: 350px;
   box-shadow: -2px -1px 26px 0px rgba(199, 199, 199, 1);
+  z-index: 0;
 }
 
 .menu-btn {
@@ -41,6 +41,7 @@
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
+  z-index: 3;
 }
 
 .category:hover {
